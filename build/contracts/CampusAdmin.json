@@ -17,7 +17,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -36,7 +37,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -73,7 +75,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"role\",\"type\":\"string\"}],\"name\":\"assignRole\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getRole\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"roles\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/CampusAdmin.sol\":\"CampusAdmin\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/CampusAdmin.sol\":{\"keccak256\":\"0x3ebc696e0ec672ef5ac9b6a534eb60ef0b7a6b7740e4975003bbe4a2f26bd0ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://55b2b985ba55eacf0550793db21f6b6beea8768a611aa8b65a4968accebd8f4d\",\"dweb:/ipfs/QmaydgVPuEW6H26NmDrBdFcmCttQVAcDJ4BFMagv28BWQi\"]}},\"version\":1}",
@@ -3961,10 +3964,17 @@
       "links": {},
       "address": "0x10e5754A61EbBf1EB50F30a88A682C1Dd77546Ea",
       "transactionHash": "0xc293a38e98ea006d41d66983db1b2320c24d4d0d6396ed2f5f2da15eafd86743"
+    },
+    "1744782284368": {
+      "events": {},
+      "links": {},
+      "address": "0x883217edC43f31c385cbc2AE1eC833428A901189",
+      "transactionHash": "0x3b5cbf921d9e14ebec048806a612452fa2b76f7cc6786e2921707df7fe5dd114"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2025-04-15T18:54:46.334Z",
+  "updatedAt": "2025-04-16T05:46:57.623Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},

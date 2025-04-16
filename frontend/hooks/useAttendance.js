@@ -1,20 +1,25 @@
-import { useEffect, useState } from 'react';
-import { ethers } from 'ethers';
-import AttendanceSBT from '../abis/AttendanceSBT.json';
+import { useState, useEffect } from 'react';
 import useWeb3 from './useWeb3';
+import AttendanceABI from '../abis/AttendanceSBT.json';
 
-const CONTRACT_ADDRESS = '0xYourContractAddress';
+const CONTRACT_ADDRESS = '0xYourAttendanceContractAddress';
 
-export default function useAttendance() {
-  const { signer } = useWeb3();
+const useAttendance = () => {
+  const { web3, account } = useWeb3();
   const [contract, setContract] = useState(null);
 
   useEffect(() => {
-    if (signer) {
-      const attendanceContract = new ethers.Contract(CONTRACT_ADDRESS, AttendanceSBT.abi, signer);
-      setContract(attendanceContract);
+    if (web3) {
+      const instance = new web3.eth.Contract(AttendanceABI, CONTRACT_ADDRESS);
+      setContract(instance);
     }
-  }, [signer]);
+  }, [web3]);
 
-  return contract;
-}
+  const markAttendance = async (eventId) => {
+    await contract.methods.markAttendance(eventId).send({ from: account });
+  };
+
+  return { markAttendance };
+};
+
+export default useAttendance;

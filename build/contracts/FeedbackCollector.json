@@ -23,7 +23,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -49,7 +50,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"feedbacks\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"hashedFeedback\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"timestamp\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getFeedbackCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"feedback\",\"type\":\"string\"}],\"name\":\"submitFeedback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/FeedbackCollector.sol\":\"FeedbackCollector\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/FeedbackCollector.sol\":{\"keccak256\":\"0xae3d695654f79ff043148a98b412481cd3cfa44f6dbb9ccc1a5e863c3c0786cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b7820a03a83afd665414ec52ce9e82e436f9cd3a0ad786b167d1487b80b30f51\",\"dweb:/ipfs/QmQ7oVzrrscRdvrdLfv6D6X6d1kKJtWZT3v4YreACGdEuP\"]}},\"version\":1}",
@@ -3317,10 +3319,17 @@
       "links": {},
       "address": "0xE246A1CFe6A0105762b080ACc24419DF33f44424",
       "transactionHash": "0x7a2fb8c8db6542ec0a25105f3ac9477ba4a1888032c4b9f191c67ab6187673a6"
+    },
+    "1744782284368": {
+      "events": {},
+      "links": {},
+      "address": "0xAac21EE3CB2a9f3E75172E62Da55F60FB4Ee0C03",
+      "transactionHash": "0x253986bf6b4698a1e17112412c1eea204e6b76893dcd2b7f374e2d90189381a6"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2025-04-15T18:54:46.364Z",
+  "updatedAt": "2025-04-16T05:46:57.620Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
