@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @tailwind utilities; */
+
+/* Custom global styles */
+body {
+  background-color: #f9fafb; /* Equivalent to bg-gray-50 */
+  color: #1f2937; /* Equivalent to text-gray-800 */
+  -webkit-font-smoothing: antialiased; /* Equivalent to antialiased */
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+main {
+  padding: 1rem; /* Equivalent to p-4 in Tailwind CSS */
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Button base style */
+.btn {
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  font-weight: 500; /* font-medium */
+  color: #ffffff; /* text-white */
+  transition: all 0.2s; /* transition duration-200 */
+}
+
+.btn-primary {
+  background-color: #2563eb; /* bg-blue-600 */
+  transition: background-color 0.2s; /* transition duration-200 */
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* hover:bg-blue-700 */
+}
+
+.btn-secondary {
+  background-color: #4b5563; /* Equivalent to bg-gray-600 */
+  transition: background-color 0.2s; /* transition duration-200 */
+}
+
+.btn-secondary:hover {
+  background-color: #374151; /* Equivalent to hover:bg-gray-700 */
+}
